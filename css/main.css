@@ -12,17 +12,17 @@ CSS garden design file by Brandon Payero
 
 /* ------- Color ------- */
 html{
-    background-color: hsla(240, 35%, 89%, 0.9);
+    background-color: hsla(150, 40%, 89%, 0.9);
     padding: 2.5%;
 }
 body{
-    background-color: hsla(150, 40%, 89%, 0.9);
+    background-color: hsla(240, 35%, 89%, 0.9);
     padding: 2.5%;
 }
 
 div.preamble, div.requirement, div.benefits{
     color:hsla(180, 51%, 15%, 0.9);
-    backgrou    nd-color: hsla(0, 0%, 100%, 0.9);
+    background-color: hsla(0, 100%, 100%, 0.9);
 }
 
 header h1{
@@ -47,7 +47,6 @@ div,article,section,header,nav,figure,li{
 
 header h1{
     position: relative;
-    left: 100px;
     top: -1ex;  
 }
 
@@ -63,4 +62,65 @@ footer{
     width: 30%;
     left: 30%;
     bottom: 0px;
+}
+
+section.intro{
+    width: 60%;
+}
+
+div.explanation{
+    float: left;
+    width: 40%;
+    padding: 5%;
+}
+
+div.participation{
+    margin-left: 50%;
+    width: 40%;
+}
+
+div.benefits{
+    float: left;
+    margin-left: 50%;
+    width: 40%;
+}
+
+div.requirements{
+    /** FIX THIS **/
+    margin-right: 50%;
+    width: 40%;
+}
+
+/** Font **/
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/** Local Font **/
+@font-face {
+    font-family: 'myfont';
+    src: url('../fonts/chunkfive.woff');
+}
+
+a{
+    text-decoration: none;
+    color:hsla(280, 51%, 50%, 0.9)
+}
+
+header h1{
+    font-family: 'Courgette', cursive, sans-serif;
+    text-indent: 150px;
+    background-image: url('../img/zengarden.gif');
+}
+
+h3{
+    font-size: 2.25em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 3em;
 }
