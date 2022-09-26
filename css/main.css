@@ -68,6 +68,13 @@ section.intro{
     width: 60%;
 }
 
+section.intro div.preamble{
+    background-color: hsla(0, 100%, 100%, 0.9);
+    margin-left: -30%;
+    padding: 5% 5% 5% 30%;
+    border: hsla(280, 51%, 50%, 0.9) dashed 5px;
+}
+
 div.explanation{
     float: left;
     width: 40%;
@@ -104,7 +111,7 @@ body{
 
 a{
     text-decoration: none;
-    color:hsla(280, 51%, 50%, 0.9)
+    color:hsla(280, 51%, 0%, 0.9)
 }
 
 header h1{
@@ -123,4 +130,57 @@ h3{
 
 h2{
     font-size: 3em;
+}
+
+/* Nav Bar on top*/
+#zen-resources{
+    background-color: hsla(230, 100%, 0%, 0.9);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#zen-resources h3{
+    display: none;
+}
+
+#zen-resources ul li{
+    display: inline-block;
+    left: 28%;
+    padding: 0.5%;
+    border:hsla(280, 51%, 50%, 0.9) dashed 5px;
+}
+
+#zen-resources a{
+    color: white;
+}
+
+/* hover, active practice */
+p:hover{
+    border: hsla(50, 100%, 50%, 0.9) 5px solid;
+}
+
+h3:active~p{
+    visibility: hidden;
+    /* display: none; */
+}
+li:first-of-type{
+    color: purple;
+}
+p:first-letter{
+    font-size: 300%;
+    text-transform: uppercase;
+}
+
+p:nth-child(3n){
+    background-color: brown;
+}
+
+p:nth-child(3n+1){
+    background-color:blueviolet;
+}
+
+P:nth-child(3n+2){
+    background-color: bisque;
 }
